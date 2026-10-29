@@ -20,7 +20,7 @@ export const todosSlice = createSlice({
         },
         toggleTodo: (state, action) => {
             const todo = state.items.find(todo => todo.id === action.payload);
-            id (todo) {
+            if (todo) {
                 todo.completed = !todo.completed;
             };
         }
